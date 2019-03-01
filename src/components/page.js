@@ -61,34 +61,34 @@ class Page extends Component {
     return (
       <div style={styles}>
         <div style={{
-          justifyContent: 'flex-start',
           position: 'fixed',
           width: '100%',
           zIndex: 2,
           cursor: 'pointer',
           backgroundColor: '#fbfbfb',
-          height: 80,
+          height: '13vh',
           display: 'flex',
           alignItems: 'center',
-          boxShadow: ' 0px 4px 10px 3px rgba(34,32,32,0.3)'
+          boxShadow: ' 0px 4px 10px 3px rgba(34,32,32,0.3)',
         }}>
-          <div className="nameHeader"
-               style={{marginLeft: 20, display: 'flex', flexDirection: 'row', alignItems: 'center'}}>
-            <span
-              style={{fontFamily: 'fantasy', fontSize: 34, color: '#e45d3b', fontWeight: 'lighter'}}>Renan Campos</span>
-            <span style={{fontFamily: 'monospace', fontSize: 24, color: '#f5c639'}}>|</span>
-            <span style={{fontFamily: 'monospace', fontSize: 24, color: '#f5c639'}}>Web Developer</span>
-          </div>
-          {this.state.aboutMe === true &&
-          <span style={{fontFamily: 'monospace', paddingLeft: 150, fontSize: 24, color: '#425e66'}}>Sobre Mim</span>}
-          {this.state.work === true && <span style={{
-            fontFamily: 'monospace',
-            paddingLeft: 150,
-            fontSize: 24,
-            color: '#425e66'
-          }}>Trabalho e Educação</span>}
-          {this.state.contato === true &&
-          <span style={{fontFamily: 'monospace', paddingLeft: 150, fontSize: 24, color: '#425e66'}}>Entre em contato comigo</span>}
+
+        <div className='Header' style={{display:'flex', flexDirection:'column', flexWrap:'wrap',}}>
+            <div className='HeaderName'>
+              <span style={{marginLeft: 15,fontFamily: 'fantasy', fontSize: '4vh', color: '#e45d3b', fontWeight: 'lighter'}}>Renan Campos </span>
+              <span style={{fontFamily: 'monospace', fontSize: '3vh', color: '#f5c639'}}>|</span>
+              <span style={{fontFamily: 'monospace', fontSize: '3vh', color: '#f5c639'}}>Web Developer </span>
+              {this.state.aboutMe === true &&
+              <span style={{fontFamily: 'monospace', fontSize: '3vh', color: '#425e66'}}> Sobre Mim </span>
+              }
+              {this.state.work === true && <span style={{
+                fontFamily: 'monospace',
+                fontSize: '3vh',
+                color: '#425e66'
+              }}> Trabalho e Educação </span>}
+              {this.state.contato === true &&
+              <span style={{fontFamily: 'monospace', fontSize: '3vh', color: '#425e66'}}> Contato</span>}
+            </div>
+        </div>
 
         </div>
 
