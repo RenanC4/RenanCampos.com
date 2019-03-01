@@ -66,7 +66,7 @@ class Page extends Component {
           zIndex: 2,
           cursor: 'pointer',
           backgroundColor: '#fbfbfb',
-          height: '13vh',
+          height: '10vw',
           display: 'flex',
           alignItems: 'center',
           boxShadow: ' 0px 4px 10px 3px rgba(34,32,32,0.3)',
@@ -74,31 +74,31 @@ class Page extends Component {
 
         <div className='Header' style={{display:'flex', flexDirection:'column', flexWrap:'wrap',}}>
             <div className='HeaderName'>
-              <span style={{marginLeft: 15,fontFamily: 'fantasy', fontSize: '4vh', color: '#e45d3b', fontWeight: 'lighter'}}>Renan Campos </span>
-              <span style={{fontFamily: 'monospace', fontSize: '3vh', color: '#f5c639'}}>|</span>
-              <span style={{fontFamily: 'monospace', fontSize: '3vh', color: '#f5c639'}}>Web Developer </span>
+              <span style={{marginLeft: 15,fontFamily: 'fantasy', fontSize: '5vw', color: '#e45d3b', fontWeight: 'lighter'}}>Renan Campos </span>
+              <span style={{fontFamily: 'monospace', fontSize: '4vw', color: '#f5c639'}}>|</span>
+              <span style={{fontFamily: 'monospace', fontSize: '4vw', color: '#f5c639'}}>Web Developer </span>
               {this.state.aboutMe === true &&
-              <span style={{fontFamily: 'monospace', fontSize: '3vh', color: '#425e66'}}> Sobre Mim </span>
+              <span style={{fontFamily: 'monospace', fontSize: '4vw', color: '#425e66'}}> Sobre Mim </span>
               }
               {this.state.work === true && <span style={{
                 fontFamily: 'monospace',
-                fontSize: '3vh',
+                fontSize: '4vw',
                 color: '#425e66'
-              }}> Trabalho e Educação </span>}
+              }}> Trabalho&nbsp;e&nbsp;Educação </span>}
               {this.state.contato === true &&
-              <span style={{fontFamily: 'monospace', fontSize: '3vh', color: '#425e66'}}> Contato</span>}
+              <span style={{fontFamily: 'monospace', fontSize: '4vw', color: '#425e66'}}> Contato</span>}
             </div>
         </div>
 
         </div>
 
-        <Parallax style={{paddingTop: 250}} bgImage={mainLogo} bgWidth="auto" strength={500}>
-          <div style={{height: 500}}>
+        <Parallax style={{paddingTop: 80}} bgImage={mainLogo} bgWidth="auto" strength={110}>
+          <div style={{height: 400}}>
           </div>
         </Parallax>
 
         <Parallax bgImage={bornAndRaised} strength={500}>
-          <div style={{height: 600}}>
+          <div style={{height: 200}}>
             <div style={{
               marginTop: '50px',
               marginLeft: '50px',
